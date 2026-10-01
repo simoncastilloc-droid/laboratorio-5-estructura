@@ -92,3 +92,15 @@ graph.c:161:1: error: control reaches end of non-void function [-Werror=return-t
       | ^
 cc1: all warnings being treated as errors
 73c1af4
+Thu Oct  1 09:08:56 PM UTC 2026: 
+ graph.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘getWeight’:
+graph.c:118:19: error: ‘NUL’ undeclared (first use in this function); did you mean ‘NULL’?
+  118 |     while(edge != NUL)
+      |                   ^~~
+      |                   NULL
+graph.c:118:19: note: each undeclared identifier is reported only once for each function it appears in
+adf5048

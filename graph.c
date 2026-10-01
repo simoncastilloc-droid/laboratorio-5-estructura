@@ -115,7 +115,7 @@ int getWeight(Graph* g, const char* label1, const char* label2)
 
     Edge* edge = (Edge*)list_first(edges);
 
-    while(edge != NULL)
+    while(edge != NUL)
     {
         if(strcmp(edge->target,label2)==0)
             return edge->weight;
@@ -142,7 +142,7 @@ List* getAdjacentLabels(Graph* g, const char* label)
 
     Edge* edge = (Edge*)list_first(edges);
 
-    while(edge != NULL
+    while(edge != NULL)
     {
         char* copy = malloc(strlen(edge->target)+1);
 
