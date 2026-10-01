@@ -22,3 +22,15 @@ Thu Oct  1 08:33:05 PM UTC 2026:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 34bf71b
+Thu Oct  1 08:40:59 PM UTC 2026: 
+ graph.c | 19 ++++++++++++++++++-
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘addNode’:
+graph.c:54:8: error: ‘newlabel’ undeclared (first use in this function); did you mean ‘newLabel’?
+   54 |     if(newlabel == NULL)return;
+      |        ^~~~~~~~
+      |        newLabel
+graph.c:54:8: note: each undeclared identifier is reported only once for each function it appears in
+b87b342
