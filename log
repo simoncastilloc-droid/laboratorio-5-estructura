@@ -72,3 +72,23 @@ Thu Oct  1 09:08:18 PM UTC 2026:
  tests:  12|0
 ========================================
 a0bd9b0
+Thu Oct  1 09:08:44 PM UTC 2026: 
+ graph.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘getAdjacentLabels’:
+graph.c:146:5: error: expected ‘)’ before ‘{’ token
+  146 |     {
+      |     ^
+graph.c:145:10: note: to match this ‘(’
+  145 |     while(edge != NULL
+      |          ^
+graph.c:161:1: error: expected expression before ‘}’ token
+  161 | }
+      | ^
+graph.c:161:1: error: control reaches end of non-void function [-Werror=return-type]
+  161 | }
+      | ^
+cc1: all warnings being treated as errors
+73c1af4

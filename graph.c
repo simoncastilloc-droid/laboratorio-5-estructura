@@ -142,7 +142,7 @@ List* getAdjacentLabels(Graph* g, const char* label)
 
     Edge* edge = (Edge*)list_first(edges);
 
-    while(edge != NULL)
+    while(edge != NULL
     {
         char* copy = malloc(strlen(edge->target)+1);
 
