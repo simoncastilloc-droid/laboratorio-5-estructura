@@ -128,11 +128,36 @@ int getWeight(Graph* g, const char* label1, const char* label2)
 }
 
 // Retorna una nueva List* que contiene elementos de tipo char* (las etiquetas)
-List* getAdjacentLabels(Graph* g, const char* label) {
+List* getAdjacentLabels(Graph* g, const char* label) 
+{
     if (!g || !label) return NULL;
 
+    List* edges = getEdges(g,label);
 
-    return NULL; 
+    if(edges == NULL) return NULL;
+
+    List* adjacent = list_create();
+
+    if(adjacent == NULL)return NULL;
+
+    Edge* edge = (Edge*)list_first(edges);
+
+    while(edge != NULL)
+    {
+        char* copy = malloc(strlen(edge->target)+1);
+
+        if(copy==NULL)
+        {
+            list_clean(adjacent);
+            free(adjacent);
+            return NULL;
+        }
+        strcpy(copy,edge->target);
+        list_pushBack(adjacent,copy);
+        edge = (Edge*)list_next(edges);  
+    }
+
+    return adjacent; 
 }
 
 void destroyGraph(Graph* g) {
