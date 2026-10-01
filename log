@@ -50,3 +50,13 @@ Thu Oct  1 08:54:54 PM UTC 2026:
  tests:  8|2
 ========================================
 54bb14c
+Thu Oct  1 08:58:44 PM UTC 2026: 
+ graph.c | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘getWeight’:
+graph.c:114:29: error: returning ‘void *’ from a function with return type ‘int’ makes integer from pointer without a cast [-Wint-conversion]
+  114 |     if(edges == NULL)return NULL;
+      |                             ^~~~
+da802fc
