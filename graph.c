@@ -34,7 +34,7 @@ Graph* createGraph()
 
     g->adjacencyMap = map_create(is_equal_string);
 
-    if(g->adjacentMap == NULL)
+    if(g->adjacencyMap == NULL)
     {
         free(g);
         return NULL;
