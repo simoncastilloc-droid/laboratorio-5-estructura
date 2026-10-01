@@ -136,7 +136,7 @@ List* getAdjacentLabels(Graph* g, const char* label)
 
     if(edges == NULL) return NULL;
 
-    List* adjacent = list_create()
+    List* adjacent = list_create();
 
     if(adjacent == NULL)return NULL;
 
