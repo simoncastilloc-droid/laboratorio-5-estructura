@@ -51,7 +51,7 @@ void addNode(Graph* g, const char* label)
 
     char* newLabel = malloc(strlen(label) + 1);
 
-    if(newlabel == NULL)return;
+    if(newLabel == NULL)return;
     strcpy(newLabel,label);
 
     List* edgesList = list_create();
