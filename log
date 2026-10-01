@@ -6,3 +6,14 @@ Fri May  8 10:07:21 PM UTC 2026:
  tests:  0|6
 ========================================
 36e8bf5
+Thu Oct  1 08:32:46 PM UTC 2026: 
+ graph.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘createGraph’:
+graph.c:37:11: error: ‘Graph’ has no member named ‘adjacentMap’; did you mean ‘adjacencyMap’?
+   37 |     if(g->adjacentMap == NULL)
+      |           ^~~~~~~~~~~
+      |           adjacencyMap
+fb440aa
