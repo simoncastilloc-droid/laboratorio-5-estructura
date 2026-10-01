@@ -111,7 +111,7 @@ int getWeight(Graph* g, const char* label1, const char* label2)
 
     List* edges = getEdges(g,label1);
 
-    if(edges == NULL)return NULL;
+    if(edges == NULL)return -1;
 
     Edge* edge = (Edge*)list_first(edges);
 
