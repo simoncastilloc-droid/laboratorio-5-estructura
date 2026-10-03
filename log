@@ -235,3 +235,19 @@ Sat Oct  3 01:47:55 AM UTC 2026:
  tests:  12|0
 ========================================
 aadc145
+Sat Oct  3 01:48:34 AM UTC 2026: 
+ graph.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘addEdge’:
+graph.c:80:8: error: ‘edge’ undeclared (first use in this function); did you mean ‘Edge’?
+   80 |     if(edge == NULL)return;
+      |        ^~~~
+      |        Edge
+graph.c:80:8: note: each undeclared identifier is reported only once for each function it appears in
+graph.c:78:11: error: unused variable ‘edg’ [-Werror=unused-variable]
+   78 |     Edge* edg = malloc(sizeof(Edge));
+      |           ^~~
+cc1: all warnings being treated as errors
+3101bd3
