@@ -147,3 +147,14 @@ graph.c:43:13: error: expected ‘;’ before ‘}’ token
    44 | }
       | ~            
 83376fd
+Sat Oct  3 01:47:02 AM UTC 2026: 
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘createGraph’:
+graph.c:43:13: error: expected ‘;’ before ‘}’ token
+   43 |     return g
+      |             ^
+      |             ;
+   44 | }
+      | ~            
+6192056
