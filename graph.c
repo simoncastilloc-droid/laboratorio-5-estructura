@@ -75,7 +75,7 @@ void addEdge(Graph* g, const char* src, const char* dest, int weight)
 
     List* edgesList = (List*)pair->value;
 
-    Edge* edg = malloc(sizeof(Edge));
+    Edge* edge = malloc(sizeof(Edge));
 
     if(edge == NULL)return;
 
