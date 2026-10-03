@@ -191,3 +191,21 @@ graph.c:43:13: error: expected ‘;’ before ‘}’ token
    44 | }
       | ~            
 a3d7571
+Sat Oct  3 01:47:22 AM UTC 2026: 
+ graph.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+graph.c: In function ‘createGraph’:
+graph.c:39:9: error: too few arguments to function ‘free’
+   39 |         free();
+      |         ^~~~
+In file included from test.c:2:
+/nix/store/41pf3md9zgpda9kwh6rzn5kaddf7i0lp-glibc-2.40-66-dev/include/stdlib.h:687:13: note: declared here
+  687 | extern void free (void *__ptr) __THROW;
+      |             ^~~~
+graph.c:43:13: error: expected ‘;’ before ‘:’ token
+   43 |     return g:
+      |             ^
+      |             ;
+44061b3

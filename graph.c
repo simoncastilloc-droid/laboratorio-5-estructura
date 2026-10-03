@@ -36,11 +36,11 @@ Graph* createGraph()
 
     if(g->adjacencyMap == NULL)
     {
-        free(g);
+        free();
         return NULL;
     }
     
-    return g
+    return g:
 }
 
 void addNode(Graph* g, const char* label) 
