@@ -40,7 +40,7 @@ Graph* createGraph()
         return NULL;
     }
     
-    return g;
+    return g
 }
 
 void addNode(Graph* g, const char* label) 
